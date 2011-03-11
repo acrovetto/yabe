@@ -2,6 +2,9 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
+POST    /posts/{postId}/comments                Application.postComment
+GET     /posts/{id}                             Application.show
+
 # Home page
 GET     /                                       Application.index
 

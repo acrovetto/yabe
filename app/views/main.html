@@ -8,9 +8,15 @@
         #{get 'moreStyles' /}
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
         <script src="@{'/public/javascripts/jquery-1.4.2.min.js'}" type="text/javascript" charset="utf-8"></script>
-        #{get 'moreScripts' /}
+    	<script src="@{'/public/javascripts/jquery.tools.min.js'}"></script>
     </head>
     <body>
-        #{doLayout /}
+        #{include 'header.html' /}
+        
+        <div id="main">
+            #{doLayout /} 
+        </div>
+        
+        #{include 'footer.html' /}
     </body>
 </html>
