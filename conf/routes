@@ -2,6 +2,7 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
+GET     /captcha                                Application.captcha
 POST    /posts/{postId}/comments                Application.postComment
 GET     /posts/{id}                             Application.show
 
