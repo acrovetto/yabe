@@ -2,9 +2,10 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
+GET     /posts/{<[0-9]+>id}                     Application.show
+GET     /posts/{tag}                    		Application.listTagged
 GET     /captcha                                Application.captcha
 POST    /posts/{postId}/comments                Application.postComment
-GET     /posts/{id}                             Application.show
 
 # Home page
 GET     /                                       Application.index

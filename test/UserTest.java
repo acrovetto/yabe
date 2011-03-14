@@ -6,12 +6,7 @@ import org.junit.Test;
 import play.test.Fixtures;
 import play.test.UnitTest;
 
-public class UserTest extends UnitTest {
-
-    @Before
-    public void setup() {
-        Fixtures.deleteAll();
-    }
+public class UserTest extends BasicTest {
 
     @Test
     public void createAndRetrieveUser() {
