@@ -1,0 +1,16 @@
+#{extends 'admin.html' /}
+
+<h3>Welcome ${user}, <span>you have written ${posts.size() ?: 'no'} ${posts.pluralize('post', 'posts')} so far</span></h3>
+ 
+#{list items:posts, as:'post'}
+    <p class="post ${post_parity}" style="height: 21px">
+        <a href="@{Admin.form(post.id)}">${post.title}</a>
+        <a href="@{Admin.delete(post.id)}" style="float: right;">
+        	<img class="delete" src="./public/images/poubelle.png" alt="delete"/>
+        </a>
+    </p>
+#{/list}
+ 
+<p id="newPost" >
+    <a href="@{Admin.form}"><span>+</span> write a new post</a>
+</p>
