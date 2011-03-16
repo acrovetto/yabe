@@ -2,8 +2,17 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
+GET     /admin/myPosts/{id}                 	Admin.form
+GET     /admin/new                          	Admin.form
+POST    /admin/myPosts/{id}                  	Admin.save
+POST    /admin/new                          	Admin.save
+
+GET     /admin/?                                Admin.index
 # Import CRUD routes
 *       /admin              					module:crud
+
+# Import Secure routes
+*       /                                       module:secure
 
 GET     /posts/{<[0-9]+>id}                     Application.show
 GET     /posts/{tag}                    		Application.listTagged
