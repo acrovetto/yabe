@@ -11,6 +11,10 @@ body {
     margin: auto;
 }
 
+a {
+	text-decoration: none;
+}
+
 /** Blog header **/
 
 #header {
@@ -544,4 +548,10 @@ tr.odd {
 
 .hasError {
     background: pink;
+}
+
+.delete {
+	height: 16px;
+	width: 16px;
+	border: none;	
 }
