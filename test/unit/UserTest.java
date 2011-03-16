@@ -1,3 +1,4 @@
+package unit;
 import models.User;
 
 import org.junit.Before;
